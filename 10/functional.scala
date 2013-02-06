@@ -7,7 +7,7 @@ def seive(end: Long):Array[Long] = {
           primes(j) = 0
         }
     }
-    primes.filter(e => 1 < e)
+    primes
   }
 val primes = seive(2000000)
 println(primes.reduceLeft(_+_))
