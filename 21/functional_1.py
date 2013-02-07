@@ -18,7 +18,6 @@ def sum_o_divisors(number):
     return sum
 
 #if sum_o_divisors(n) == m and sum_o_divisors(m) == n, then n and m are 'amicable'
-
 def amicable(n):
    if sum_o_divisors(n) == n: return False 
    if sum_o_divisors(sum_o_divisors(n)) != n: return False
