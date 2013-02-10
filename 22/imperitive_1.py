@@ -1,5 +1,7 @@
 import os
+
 __dir__ = os.path.dirname(os.path.abspath(__file__))
+
 with open(os.path.join(__dir__,"names.txt")) as names:
     names = sorted(names.read().split(","))
     total = 0
